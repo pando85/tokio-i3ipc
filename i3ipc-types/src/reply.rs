@@ -55,7 +55,6 @@ pub struct Node {
     pub output: Option<String>,
     pub orientation: NodeOrientation,
     pub border: NodeBorder,
-    #[cfg(not(feature = "sway"))]
     pub scratchpad_state: ScratchpadState,
     pub percent: Option<f64>,
     pub rect: Rect,
